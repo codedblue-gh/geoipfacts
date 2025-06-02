@@ -1,0 +1,46 @@
+// vars
+
+@import 'base/vars';
+
+// ------------------------------- base styles ------------------------------
+
+// base scss
+@import 'base/set';
+@import 'base/header';
+@import 'base/footer';
+
+// common scss
+@import 'common/typo';
+@import 'common/btn';
+@import 'common/layout';
+@import 'common/form';
+@import 'common/swiper';
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  main {
+    flex: 1 1 auto;
+  }
+}
+
+._show-menu {
+  overflow: hidden;
+}
+
+// --------------------------------------------------------------------------
+
+// sections
+@import 'sections/hero';
+@import 'sections/articles';
+@import 'sections/blog-hero';
+@import 'sections/blog';
+@import 'sections/services';
+@import 'sections/myip';
+@import 'sections/about';
+@import 'sections/contacts';
+@import 'sections/article';

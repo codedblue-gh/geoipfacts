@@ -1,0 +1,39 @@
+.input {
+  padding: 2.5rem;
+
+  display: flex;
+  height: 6rem;
+  border: 1px solid var(--c-light-gray);
+  border-radius: 1rem;
+
+  font-size: 1.8rem;
+
+  transition: border 0.4s ease-in-out;
+
+  &:focus {
+    border: 1px solid var(--c-primary);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 1px solid var(--c-primary);
+    }
+  }
+
+  @media (max-width: 49em) {
+    padding: 3rem;
+    height: 9rem;
+
+    font-size: 3rem;
+  }
+
+  &_textarea {
+    height: 15rem;
+
+    resize: none;
+
+    @media (max-width: 49em) {
+      height: 22rem;
+    }
+  }
+}

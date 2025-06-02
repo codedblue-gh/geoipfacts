@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{"title": "My IP"})
+  <body>
+    @@include('html/_header.htm',{})
+    <div class="wrapper">
+      <main class="main">
+        @@include('html/myip.htm',{})
+        <section class="other">
+          <div class="other__container container">
+            <div class="other__head">
+              <h2 class="other__heading heading heading_xl">
+                Наши другие <span class="heading__highlight">сервисы</span>
+              </h2>
+
+              <a href="#" class="other__btn btn-secondary">Смотреть все</a>
+            </div>
+            <ul class="other__list">
+              <li class="other__item item-services">
+                <a href="#" class="item-services__inner border">
+                  <div class="item-services__icon">
+                    <img
+                      src="@img/icons/development.svg"
+                      alt=""
+                      class="item-services__icon-img"
+                      aria-hidden="true" />
+                  </div>
+                  <span class="item-services__heading heading heading_s"
+                    >Утилиты разработчика</span
+                  >
+                  <p class="item-services__text">
+                    Инструменты для вычисления криптографических хэшей,
+                    кодирования и декодирования, инструменты для выполнения
+                    различных преобразований
+                  </p>
+                </a>
+              </li>
+              <li class="other__item item-services">
+                <a href="#" class="item-services__inner border">
+                  <div class="item-services__icon">
+                    <img
+                      src="@img/icons/hash.svg"
+                      alt=""
+                      class="item-services__icon-img"
+                      aria-hidden="true" />
+                  </div>
+                  <span class="item-services__heading heading heading_s"
+                    >Блок для вашего сайта</span
+                  >
+                  <p class="item-services__text">
+                    Здесь вы можете подобрать для своего сайта блок с
+                    информацией пользователя
+                  </p>
+                </a>
+              </li>
+              <li class="other__item item-services">
+                <a href="#" class="item-services__inner border">
+                  <div class="item-services__icon">
+                    <img
+                      src="@img/icons/mail.svg"
+                      alt=""
+                      class="item-services__icon-img"
+                      aria-hidden="true" />
+                  </div>
+                  <span class="item-services__heading heading heading_s"
+                    >Проверка почты на взлом</span
+                  >
+                  <p class="item-services__text">
+                    Сервис поиска вашего email адреса и пароля по базам
+                    украденных аккаунтов из различных источников
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_svg.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

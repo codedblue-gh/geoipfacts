@@ -1,0 +1,172 @@
+.article {
+  // .article__container
+
+  &__container {
+    &.container {
+      padding-top: 22rem;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 13rem;
+      width: 100rem;
+
+      @media (max-width: 49em) {
+        padding-top: 24rem;
+
+        width: 100%;
+      }
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 8rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .article__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  // .article__heading
+
+  &__heading {
+    margin-bottom: 4rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  // .article__tags
+
+  &__tags {
+    margin-bottom: 8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 10rem;
+
+      gap: 2rem;
+    }
+  }
+
+  // .article__tag
+
+  &__tag {
+  }
+
+  // .article__image-wrap
+
+  &__image-wrap {
+    margin-bottom: 2rem;
+
+    width: 100%;
+
+    @media (max-width: 49em) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  // .article__image
+
+  &__image {
+    border-radius: var(--p-radius);
+    height: 47rem;
+
+    object-fit: cover;
+  }
+
+  // .article__txt
+
+  &__txt {
+    opacity: 0.7;
+  }
+
+  // .article__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+
+    @media (max-width: 49em) {
+      row-gap: 10rem;
+    }
+  }
+
+  // .article__group
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--p-row-gap);
+  }
+
+  // .article__text-wrap
+
+  &__text-wrap,
+  &__list-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @media (max-width: 49em) {
+      row-gap: 6rem;
+    }
+  }
+
+  &__group-heading {
+    line-height: 120%;
+  }
+
+  // .article__text
+
+  &__text {
+    max-width: none;
+
+    opacity: 0.7;
+  }
+
+  // .article__list-wrap
+
+  &__list-wrap {
+    margin: 2rem 0;
+  }
+
+  // .article__list-heading
+
+  &__list-heading {
+  }
+
+  // .article__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    list-style: inside;
+    li {
+      list-style: inside;
+    }
+    @media (max-width: 49em) {
+      row-gap: 2rem;
+    }
+  }
+
+  // .article__list-item
+
+  &__list-item {
+  }
+}

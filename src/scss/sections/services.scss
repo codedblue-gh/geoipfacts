@@ -1,0 +1,134 @@
+.services {
+  // .services__container
+
+  &__container {
+    &.container {
+      padding-top: 22rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      @media (max-width: 49em) {
+        padding-top: 24rem;
+      }
+    }
+  }
+
+  // .services__heading
+
+  &__heading {
+    margin-bottom: 4rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  // .services__text
+
+  &__text {
+    margin-bottom: 8rem;
+
+    @media (max-width: 49em) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .services__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--p-row-gap);
+
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // .services__item
+
+  &__item {
+  }
+}
+
+.item-services {
+  // .item-services__inner
+
+  &__inner {
+    padding: 4.5rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+    height: 100%;
+
+    transition: box-shadow 0.4s ease-in-out, border 0.4s ease-in-out;
+
+    @media (max-width: 49em) {
+      padding: 6rem;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.6) 0 0.8rem 2.4rem;
+        border: 1px solid var(--c-primary);
+      }
+    }
+  }
+
+  // .item-services__icon
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid var(--c-light-gray);
+    border-radius: 1rem;
+
+    @media (max-width: 49em) {
+      width: 10.5rem;
+      height: 10.5rem;
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  // .item-services__icon-img
+
+  &__icon-img {
+  }
+
+  // .item-services__heading
+
+  &__heading {
+    max-width: 34rem;
+
+    flex: 1 1 auto;
+
+    @media (max-width: 49em) {
+      max-width: 52rem;
+    }
+  }
+
+  // .item-services__text
+
+  &__text {
+    line-height: 120%;
+  }
+}
