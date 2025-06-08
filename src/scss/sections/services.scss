@@ -57,6 +57,14 @@
 }
 
 .item-services {
+  a {
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.6) 0 0.8rem 2.4rem;
+        border: 1px solid var(--c-primary);
+      }
+    }
+  }
   // .item-services__inner
 
   &__inner {
@@ -70,15 +78,13 @@
 
     transition: box-shadow 0.4s ease-in-out, border 0.4s ease-in-out;
 
-    @media (max-width: 49em) {
-      padding: 6rem;
+    &:not(a) {
+      opacity: 0.5;
+      cursor: default;
     }
 
-    @media (any-hover: hover) {
-      &:hover {
-        box-shadow: rgba(0, 0, 0, 0.6) 0 0.8rem 2.4rem;
-        border: 1px solid var(--c-primary);
-      }
+    @media (max-width: 49em) {
+      padding: 6rem;
     }
   }
 

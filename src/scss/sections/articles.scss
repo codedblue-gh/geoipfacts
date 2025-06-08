@@ -76,10 +76,12 @@
 
   text-align: left;
 
-  &_right-aligned {
-    .item-articles__image-wrap {
-      grid-column: 2/3;
-      grid-row: 1/2;
+  &:not(.swiper &) {
+    &:nth-child(2n) {
+      .item-articles__image-wrap {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
     }
   }
 
@@ -184,8 +186,6 @@
   // .item-articles__tags
 
   &__tags {
-    margin-bottom: auto;
-
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -215,6 +215,7 @@
   // .item-articles__btn
 
   &__btn {
+    margin-top: auto;
   }
 }
 

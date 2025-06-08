@@ -335,13 +335,11 @@
 
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 2.5rem;
-    line-height: 135%;
+    background-size: contain;
+    line-height: 148%;
 
     @media (max-width: 49em) {
-      padding-left: 7rem;
-
-      background-size: 4rem;
+      padding-left: 9rem;
     }
   }
 }
