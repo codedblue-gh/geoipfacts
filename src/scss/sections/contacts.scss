@@ -63,6 +63,13 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
+
+    @media (max-width: 49em) {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      row-gap: 4rem;
+    }
   }
 
   // .contacts__input

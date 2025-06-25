@@ -337,6 +337,8 @@
     background-position: left center;
     background-size: contain;
     line-height: 148%;
+    filter: invert(1);
+    color: #000000;
 
     @media (max-width: 49em) {
       padding-left: 9rem;
