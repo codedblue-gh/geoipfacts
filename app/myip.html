@@ -71,7 +71,7 @@
 					<div class="myip__body">
 						<div class="myip__content">
 							<ul class="myip__list">
-								<li class="myip__item item-myip">
+								<li id="general-info" class="myip__item item-myip">
 									<span class="item-myip__heading heading heading_m">Общая информация</span>
 									<ul class="item-myip__sublist">
 										<li class="item-myip__sublist-item">
@@ -96,7 +96,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="myip__item item-myip">
+								<li id="geo-info" class="myip__item item-myip">
 									<span class="item-myip__heading heading heading_m">IP-геолокация</span>
 									<ul class="item-myip__sublist">
 										<li class="item-myip__sublist-item">
@@ -117,7 +117,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="myip__item item-myip item-myip_device-info">
+								<li id="device-info" class="myip__item item-myip item-myip_device-info">
 									<ul class="item-myip__sublist">
 										<li class="item-myip__item">
 											<span class="item-myip__item-subtitle">Ваш браузер</span>
@@ -138,13 +138,19 @@
 						<div class="myip__aside">
 							<ul class="myip__aside-list">
 								<li class="myip__aside-list-item">
-									<a href="#" class="myip__aside-list-item-txt">Общая информация</a>
+									<button type="button" data-anchor="#general-info" class="myip__aside-list-item-txt">
+										Общая информация
+									</button>
 								</li>
 								<li class="myip__aside-list-item">
-									<a href="#" class="myip__aside-list-item-txt">IP-геолокация</a>
+									<button type="button" data-anchor="#geo-info" class="myip__aside-list-item-txt">
+										IP-геолокация
+									</button>
 								</li>
 								<li class="myip__aside-list-item">
-									<a href="#" class="myip__aside-list-item-txt">Информация об устройстве</a>
+									<button type="button" data-anchor="#device-info" class="myip__aside-list-item-txt">
+										Информация об устройстве
+									</button>
 								</li>
 							</ul>
 						</div>
@@ -230,6 +236,8 @@
 		</symbol>
 	</svg>
 	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
 	<script defer src="js/app.js"></script>
 
 </body>

@@ -33,4 +33,20 @@ window.addEventListener('load', () => {
         document.documentElement.classList.toggle('_show-menu');
       });
   }
+
+  if (document.querySelector('[data-anchor]')) {
+    for (
+      let i = 0;
+      i < document.querySelectorAll('[data-anchor]').length;
+      i++
+    ) {
+      const anchor = document.querySelectorAll('[data-anchor]')[i];
+
+      anchor.addEventListener('click', function () {
+        gsap.to(window, {
+          scrollTo: { y: anchor.dataset.anchor, offsetY: 50 },
+        });
+      });
+    }
+  }
 });
